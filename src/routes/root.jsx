@@ -55,10 +55,10 @@ const Root = () => {
           <main id="detail" className="container mx-auto flex-grow m-4">
             <Outlet />
           </main>
-        </div>
 
         {/* FOOTER */}
         <Footer />
+        </div>
 
         {/* MOBILE SIDE DRAWER */}
         <div className="drawer-side">
