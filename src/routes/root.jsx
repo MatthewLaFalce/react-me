@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import { Link, Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 import Footer from "../components/footer";
 import ThemePicker from "../components/themePicker";
 import BoltSvg from "../components/common/boltSvg";
 import DrawerSvg from "../components/common/drawerSvg";
 import NavItem from "../components/common/navItem";
+import "react-toastify/dist/ReactToastify.css";
 
 const Root = () => {
   useEffect(() => {
@@ -16,6 +18,7 @@ const Root = () => {
 
   return (
     <>
+      <ToastContainer />
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">

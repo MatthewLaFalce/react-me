@@ -6,10 +6,14 @@ import Root from "./routes/root";
 import ErrorPage from './routes/error-page';
 import Home from './routes/home';
 import Github from './routes/github';
-import NoMatch from './routes/noMatch'
+import NoMatch from './routes/noMatch';
+
+import logger from "./services/logService";
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+
+logger.init();
 
 const router = createBrowserRouter([
   {
@@ -24,6 +28,7 @@ const router = createBrowserRouter([
             path: "github",
             element: <Github />,
           },
+
           /* the rest of the routes */
           { path: "*", element: <NoMatch /> }
         ],
