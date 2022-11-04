@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ExternalLink from "./common/externalLink";
+import ExternalLink from "../common/externalLink";
 
 class GithubUser extends Component {
   render() {
@@ -10,7 +10,7 @@ class GithubUser extends Component {
       <div className="flex items-center space-x-2">
         <div className="online avatar mr-4">
           <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src={avatar_url} />
+            <img src={avatar_url} alt="My GH profile image" />
           </div>
         </div>
         <div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import GithubProject from "../components/githubProject";
-import GithubUser from "../components/githubUser";
+import GithubProject from "../components/github/project";
+import GithubUser from "../components/github/user";
 import { getUser, getUserRepos } from "../services/githubService";
 
 class Github extends Component {
@@ -14,6 +14,10 @@ class Github extends Component {
   async componentDidMount() {
     const { data: githubUser } = await getUser("MatthewLaFalce");
     const { data: projects } = await getUserRepos(githubUser.login);
+
+    // Sort projects
+    projects.sort((a, b) => b.pushed_at.localeCompare(a.pushed_at));
+
     this.setState({ githubUser, isLoaded: true, projects });
   }
 

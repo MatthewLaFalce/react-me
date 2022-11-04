@@ -9,6 +9,7 @@ import BoltSvg from "../components/common/boltSvg";
 import DrawerSvg from "../components/common/drawerSvg";
 import NavItem from "../components/common/navItem";
 import "react-toastify/dist/ReactToastify.css";
+import { GoHubot, GoMarkGithub } from "react-icons/go";
 
 const Root = () => {
   useEffect(() => {
@@ -44,8 +45,8 @@ const Root = () => {
             {/* Full size links */}
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal rounded-box p-2 text-primary">
-                <NavItem text="About Me" path="/about_me" />
-                <NavItem text="Github" path="/github" />
+                <NavItem text="About Me" path="/about_me" icon={<GoHubot />} />
+                <NavItem text="Github" path="/github" icon={<GoMarkGithub />} />
                 <ThemePicker />
               </ul>
             </div>
@@ -56,16 +57,16 @@ const Root = () => {
             <Outlet />
           </main>
 
-        {/* FOOTER */}
-        <Footer />
+          {/* FOOTER */}
+          <Footer />
         </div>
 
         {/* MOBILE SIDE DRAWER */}
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
-            <NavItem text="About Me" path="/about_me" />
-            <NavItem text="Github" path="/github" />
+            <NavItem text="About Me" path="/about_me" icon={<GoHubot />} />
+            <NavItem text="Github" path="/github" icon={<GoMarkGithub />} />
           </ul>
         </div>
       </div>
