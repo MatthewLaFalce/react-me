@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from "./routes/root";
-import ErrorPage from './error-page';
+import ErrorPage from './routes/error-page';
 import Home from './routes/home';
 import Github from './routes/github';
+import NoMatch from './routes/noMatch'
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -14,15 +15,21 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Home /> },
       {
-        path: "github",
-        element: <Github />
-      }
-    ]
-  }
+        errorElement: <ErrorPage />,
+        children: [
+          { index: true, element: <Home /> },
+          {
+            path: "github",
+            element: <Github />,
+          },
+          /* the rest of the routes */
+          { path: "*", element: <NoMatch /> }
+        ],
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
