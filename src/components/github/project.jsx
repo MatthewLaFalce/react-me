@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { GoMarkGithub } from "react-icons/go";
+import Emoji from "react-emoji-render";
 import GithubLanguageBadge from "./languageBadge";
 
 class GithubProject extends Component {
@@ -15,7 +16,9 @@ class GithubProject extends Component {
             <a href={html_url}>{name}</a>
             <GithubLanguageBadge language={language} />
           </h2>
-          <p>{description}</p>
+          <p>
+            <Emoji text={description} />
+          </p>
           <div className="card-actions justify-center">
             {topics.map((topic) => (
               <div key={id + topic} className="badge badge-outline">
