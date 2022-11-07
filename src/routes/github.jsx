@@ -34,7 +34,7 @@ class Github extends Component {
           <div className="divider text-base-content/60 m-0">
             Open Source Projects
           </div>
-          <div className="columns-3">
+          <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
               <GithubProject key={project.id} project={project} />
             ))}
