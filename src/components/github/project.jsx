@@ -1,30 +1,31 @@
 import React, { Component } from "react";
-import { GoMarkGithub } from "react-icons/go";
+import { GoRepo } from "react-icons/go";
 import Emoji from "react-emoji-render";
-import GithubLanguageBadge from "./languageBadge";
+import Language from "./language";
+import Forks from "./forks";
+import Stars from "./stars";
 
 class GithubProject extends Component {
   render() {
-    const { id, html_url, name, language, description, topics } =
+    const { html_url, name, language, description, forks, stargazers_count } =
       this.props.project;
 
     return (
       <div className="card w-96 bg-base-100 shadow-xl m-4">
         <div className="card-body">
           <h2 className="card-title">
-            <GoMarkGithub />
-            <a href={html_url}>{name}</a>
-            <GithubLanguageBadge language={language} />
+            <GoRepo />
+            <a href={html_url} className="text-primary">
+              {name}
+            </a>
           </h2>
           <p>
             <Emoji text={description} />
           </p>
-          <div className="card-actions justify-center">
-            {topics.map((topic) => (
-              <div key={id + topic} className="badge badge-outline">
-                {topic}
-              </div>
-            ))}
+          <div className="card-actions justify-left">
+            <Language language={language} />
+            <Stars stars={stargazers_count} />
+            <Forks forks={forks} />
           </div>
         </div>
       </div>

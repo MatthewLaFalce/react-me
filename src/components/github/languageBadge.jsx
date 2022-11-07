@@ -1,35 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import Colors from "./colors.json";
 
-class GithubLanguageBadge extends Component {
-  getBadgeClasses(language) {
-    let classes = "badge badge-sm ";
-    if (language === undefined || language === null || language === "") {
-      return;
-    }
-    switch (language) {
-      case "Ruby":
-        classes += "badge-error";
-        break;
-      case "JavaScript":
-        classes += "badge-warning";
-        break;
-      case "Shell":
-        classes += "badge-success";
-        break;
-      case "HTML":
-        classes += "badge-info";
-        break;
-      default:
-        classes += "";
-        break;
-    }
-    return classes;
-  }
+function getColor(language) {
+  return Colors[language]["color"];
+}
 
-  render() {
-    const { language } = this.props;
-
-    return <div className={this.getBadgeClasses(language)}>{language}</div>;
+function LanguageBadge({ language }) {
+  if (language !== undefined && language !== null) {
+    return (
+      <span
+        class="badge badge-xs mr-2"
+        style={{ backgroundColor: getColor(language) }}
+      ></span>
+    );
   }
 }
-export default GithubLanguageBadge;
+
+export default LanguageBadge;
