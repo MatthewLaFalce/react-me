@@ -11,7 +11,7 @@ class GithubProject extends Component {
       this.props.project;
 
     return (
-      <div className="card w-96 bg-base-100 shadow-xl m-4">
+      <div className="card w-7/8 bg-base-100 shadow-xl m-4">
         <div className="card-body">
           <h2 className="card-title">
             <GoRepo />
