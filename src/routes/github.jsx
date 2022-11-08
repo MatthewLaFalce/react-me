@@ -31,6 +31,18 @@ class Github extends Component {
       return (
         <div className="bg-base-100 grid w-full flex-grow gap-3 rounded-xl rounded-tl-none p-6 shadow-xl my-8">
           <GithubUser user={githubUser} />
+          <div className="divider text-base-content/60 m-0">Awards</div>
+          <a
+            href="https://holopin.io/@mattlafalce"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://holopin.me/mattlafalce"
+              alt="@mattlafalce's Holopin board"
+              className="rounded-xl grayscale-50"
+            />
+          </a>
           <div className="divider text-base-content/60 m-0">
             Open Source Projects
           </div>

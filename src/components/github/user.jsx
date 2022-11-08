@@ -10,7 +10,7 @@ class GithubUser extends Component {
       <div className="flex items-center space-x-2">
         <div className="online avatar mr-4">
           <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src={avatar_url} alt="My GH profile image" />
+            <img src={avatar_url} alt="My GH profile" />
           </div>
         </div>
         <div>
