@@ -1,0 +1,130 @@
+[
+  {
+    "text": "Created this personal website!",
+    "date": "November 2022",
+    "category": {
+      "tag": "project",
+      "color": "#60a5fa"
+    },
+    "link": {
+      "url": "https://mattlafalce.me",
+      "text": "Homepage"
+    }
+  },
+  {
+    "text": "Software Engineer at Innovative Computer Solutions",
+    "date": "January 2022",
+    "category": {
+      "tag": "Work",
+      "color": "#5C7F67"
+    },
+    "link": {
+      "url": "https://winepos.com",
+      "text": "winepos.com"
+    }
+  },
+  {
+    "text": "Wrote my first blog post ever on Dev",
+    "date": "October 7, 2020",
+    "category": {
+      "tag": "Dev.to",
+      "color": "#000000"
+    },
+    "link": {
+      "url": "https://dev.to/matthewlafalce/customizing-your-user-s-pagination-experience-2jb8",
+      "text": "Read more"
+    }
+  },
+  {
+    "text": "Launched webiste with a collection of helpful web app components.",
+    "date": "August 10, 2020",
+    "category": {
+      "tag": "project",
+      "color": "#60a5fa"
+    },
+    "link": {
+      "url": "https://toolkit.mattlafalce.me",
+      "text": "Check it out!"
+    }
+  },
+  {
+    "text": "Started my ReactJS journey!",
+    "date": "January 2020",
+    "category": {
+      "tag": "Education",
+      "color": "#FBBD23"
+    },
+    "link": {
+      "url": "https://codewithmosh.com",
+      "text": "See how!"
+    }
+  },
+  {
+    "text": "Developer at Innovative Computer Solutions",
+    "date": "January 2020",
+    "category": {
+      "tag": "Work",
+      "color": "#5C7F67"
+    },
+    "link": {
+      "url": "https://winepos.com",
+      "text": "winepos.com"
+    }
+  },
+  {
+    "text": "Launched webiste with a cover letter style profile of myself.",
+    "date": "June 17, 2019",
+    "category": {
+      "tag": "project",
+      "color": "#60a5fa"
+    },
+    "link": {
+      "url": "https://onepagebio.mattlafalce.me/",
+      "text": "Check it out!"
+    }
+  },
+  {
+    "text": "Launched webiste with usefully commands for young devs.",
+    "date": "May 28, 2019",
+    "category": {
+      "tag": "project",
+      "color": "#60a5fa"
+    },
+    "link": {
+      "url": "https://onepagebio.mattlafalce.me/",
+      "text": "Check it out!"
+    }
+  },
+  {
+    "text": "Junior Developer at Innovative Computer Solutions",
+    "date": "September 2018",
+    "category": {
+      "tag": "Work",
+      "color": "#5C7F67"
+    },
+    "link": {
+      "url": "https://winepos.com",
+      "text": "winepos.com"
+    }
+  },
+  {
+    "text": "Graduated Monmouth University with B.S. in Computer Science",
+    "date": "June 2018",
+    "category": {
+      "tag": "Education",
+      "color": "#FBBD23"
+    },
+    "link": {
+      "url": "https://monmouth.edu",
+      "text": "Check it out!"
+    }
+  },
+  {
+    "text": "Software Development Intern (IOS) at Exhibit LLC",
+    "date": "March 2017 - October 2017",
+    "category": {
+      "tag": "Work",
+      "color": "#5C7F67"
+    }
+  }
+]

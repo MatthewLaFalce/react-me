@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from "./routes/root";
-import ErrorPage from './routes/error-page';
-import Home from './routes/home';
-import Github from './routes/github';
-import NoMatch from './routes/noMatch';
+import ErrorPage from "./routes/error-page";
+import Home from "./routes/home";
+import Github from "./routes/github";
+import Experience from "./routes/experience";
+import NoMatch from "./routes/noMatch";
 
 import logger from "./services/logService";
 
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
 logger.init();
 
@@ -28,9 +29,13 @@ const router = createBrowserRouter([
             path: "github",
             element: <Github />,
           },
+          {
+            path: "experience",
+            element: <Experience />,
+          },
 
           /* the rest of the routes */
-          { path: "*", element: <NoMatch /> }
+          { path: "*", element: <NoMatch /> },
         ],
       },
     ],

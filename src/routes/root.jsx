@@ -10,6 +10,7 @@ import DrawerSvg from "../components/common/drawerSvg";
 import NavItem from "../components/common/navItem";
 import "react-toastify/dist/ReactToastify.css";
 import { GoHubot, GoMarkGithub } from "react-icons/go";
+import { CiViewTimeline } from "react-icons/ci";
 
 const Root = () => {
   useEffect(() => {
@@ -47,6 +48,11 @@ const Root = () => {
               <ul className="menu menu-horizontal rounded-box p-2 text-primary">
                 <NavItem text="About Me" path="/about_me" icon={<GoHubot />} />
                 <NavItem text="Github" path="/github" icon={<GoMarkGithub />} />
+                <NavItem
+                  text="Experience"
+                  path="/experience"
+                  icon={<CiViewTimeline />}
+                />
                 <ThemePicker />
               </ul>
             </div>
@@ -67,6 +73,11 @@ const Root = () => {
           <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
             <NavItem text="About Me" path="/about_me" icon={<GoHubot />} />
             <NavItem text="Github" path="/github" icon={<GoMarkGithub />} />
+            <NavItem
+              text="Experience"
+              path="/experience"
+              icon={<CiViewTimeline />}
+            />
           </ul>
         </div>
       </div>
