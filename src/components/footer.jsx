@@ -1,4 +1,7 @@
 import React from "react";
+import { IconContext } from "react-icons";
+import { FaLinkedin, FaGithub, FaDev } from "react-icons/fa";
+import ExternalLink from "./common/externalLink";
 
 const Footer = () => {
   return (
@@ -14,6 +17,25 @@ const Footer = () => {
           Providing reliable tech since 2018
         </p>
         <p>Copyright © 2022 - All right reserved</p>
+      </div>
+
+      <div>
+        <div className="grid grid-flow-col gap-4">
+          <IconContext.Provider value={{ size: "2em" }}>
+            <ExternalLink
+              path="https://www.linkedin.com/in/matthew-lafalce/"
+              icon={<FaLinkedin />}
+            />
+            <ExternalLink
+              path="https://github.com/MatthewLaFalce"
+              icon={<FaGithub />}
+            />
+            <ExternalLink
+              path="https://dev.to/matthewlafalce"
+              icon={<FaDev />}
+            />
+          </IconContext.Provider>
+        </div>
       </div>
     </footer>
   );
