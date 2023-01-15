@@ -2,6 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { FaLinkedin, FaGithub, FaDev } from "react-icons/fa";
 import ExternalLink from "./common/externalLink";
+import config from "../config.json";
 
 const Footer = () => {
   return (
@@ -22,10 +23,7 @@ const Footer = () => {
       <div>
         <div className="grid grid-flow-col gap-4">
           <IconContext.Provider value={{ size: "2em" }}>
-            <ExternalLink
-              path="https://www.linkedin.com/in/matthew-lafalce/"
-              icon={<FaLinkedin />}
-            />
+            <ExternalLink path={config.linkedInProfileUrl} icon={<FaLinkedin />} />
             <ExternalLink
               path="https://github.com/MatthewLaFalce"
               icon={<FaGithub />}

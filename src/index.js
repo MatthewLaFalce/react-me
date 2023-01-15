@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
 import Home from "./routes/home";
+import AboutMe from "./routes/aboutMe";
 import Github from "./routes/github";
 import Experience from "./routes/experience";
 import NoMatch from "./routes/noMatch";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
           { index: true, element: <Home /> },
+          {
+            path: "about_me",
+            element: <AboutMe />
+          },
           {
             path: "github",
             element: <Github />,
