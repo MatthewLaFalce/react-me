@@ -16,7 +16,7 @@ const Footer = () => {
           Matthew LaFalce <br />
           Providing reliable tech since 2018
         </p>
-        <p>Copyright © 2022 - All right reserved</p>
+        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </div>
 
       <div>
