@@ -20,7 +20,7 @@ class GithubProject extends Component {
             </a>
           </h2>
           <p>
-            <Emoji text={description} />
+            <Emoji text={description === null ? "" : description} />
           </p>
           <div className="card-actions justify-left">
             <Language language={language} />
