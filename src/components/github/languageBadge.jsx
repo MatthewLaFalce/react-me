@@ -9,7 +9,7 @@ function LanguageBadge({ language }) {
   if (language !== undefined && language !== null) {
     return (
       <span
-        class="badge badge-xs mr-2"
+        className="badge badge-xs mr-2"
         style={{ backgroundColor: getColor(language) }}
       ></span>
     );

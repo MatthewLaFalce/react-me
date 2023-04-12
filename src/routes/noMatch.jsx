@@ -7,7 +7,7 @@ export default function NoMatch() {
         <div className="max-w-md">
           <h2 className="text-5xl font-bold">It looks like you're lost...</h2>
           <p className="py-6">
-            <Link to="/" class="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               Go to the home page
             </Link>
           </p>

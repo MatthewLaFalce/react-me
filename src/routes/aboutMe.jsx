@@ -11,7 +11,11 @@ class AboutMe extends Component {
           <div className="grid place-items-center gap-4 py-4">
             <div className="avatar">
               <div className="mask mask-squircle bg-base-content w-32 bg-opacity-10 p-px">
-                <img src={headshot} alt="headshot" class="mask mask-squircle" />
+                <img
+                  src={headshot}
+                  alt="headshot"
+                  className="mask mask-squircle"
+                />
               </div>
             </div>
             <div className="text-center w-3/4">
