@@ -24,7 +24,7 @@ class AboutMe extends Component {
               </div>
               <div>
                 <p>
-                  Hi there! I'm a software engineer with over 4 years of
+                  Hi there! I'm a software engineer with over 5 years of
                   professional experience in the field.
                 </p>
                 <br />

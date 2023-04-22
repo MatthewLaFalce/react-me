@@ -1,5 +1,17 @@
 [
   {
+    "text": "Published \"Checking File Permissions in your Git Repo\"",
+    "date": "April 17, 2023",
+    "category": {
+      "tag": "Dev.to",
+      "color": "#000000"
+    },
+    "link": {
+      "url": "https://dev.to/matthewlafalce/checking-file-permissions-in-your-git-repo-ej2`",
+      "text": "Read more"
+    }
+  },
+  {
     "text": "Created this personal website!",
     "date": "November 2022",
     "category": {
@@ -9,6 +21,42 @@
     "link": {
       "url": "https://mattlafalce.me",
       "text": "Homepage"
+    }
+  },
+  {
+    "text": "Pubished \"Duplicating Table Structure and Data with PostgreSQL\"",
+    "date": "August 26, 2022",
+    "category": {
+      "tag": "Dev.to",
+      "color": "#000000"
+    },
+    "link": {
+      "url": "https://dev.to/matthewlafalce/duplicating-table-structure-and-data-with-postgresql-4d0c",
+      "text": "Read more"
+    }
+  },
+  {
+    "text": "Published \"How to find outgoing IP addresses on your Linux machine.\"",
+    "date": "March 9, 2022",
+    "category": {
+      "tag": "Dev.to",
+      "color": "#000000"
+    },
+    "link": {
+      "url": "https://dev.to/matthewlafalce/how-to-find-outgoing-ip-addresses-on-your-linux-machine-gho",
+      "text": "Read more"
+    }
+  },
+  {
+    "text": "Published \"How To: Undo the Last Commit From Your Remote Git Repository\"",
+    "date": "January 17, 2022",
+    "category": {
+      "tag": "Dev.to",
+      "color": "#000000"
+    },
+    "link": {
+      "url": "https://dev.to/matthewlafalce/how-to-undo-the-last-commit-from-your-remote-git-repository-27h9",
+      "text": "Read more"
     }
   },
   {
@@ -77,10 +125,6 @@
     "category": {
       "tag": "project",
       "color": "#60a5fa"
-    },
-    "link": {
-      "url": "https://onepagebio.mattlafalce.me/",
-      "text": "Check it out!"
     }
   },
   {
@@ -91,7 +135,7 @@
       "color": "#60a5fa"
     },
     "link": {
-      "url": "https://onepagebio.mattlafalce.me/",
+      "url": "https://knowledge.mattlafalce.me/",
       "text": "Check it out!"
     }
   },
