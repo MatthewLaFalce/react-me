@@ -1,5 +1,17 @@
 [
   {
+    "text": "Senior Software Engineer at Innovative Computer Solutions",
+    "date": "January 2024",
+    "category": {
+      "tag": "Work",
+      "color": "#5C7F67"
+    },
+    "link": {
+      "url": "https://winepos.com",
+      "text": "winepos.com"
+    }
+  },
+  {
     "text": "Launched Website for Robin's Nest in Belmar, NJ",
     "date": "May 10, 2023",
     "category": {
